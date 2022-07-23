@@ -1,5 +1,4 @@
-/* ===== Google Font Import - Poppins ===== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -229,6 +228,11 @@ nav.close ~ .dashboard{
     transition: var(--tran-05);
     z-index: 10;
 }
+
+.dashboard .bottom {
+    padding: 120px 0px 0px;
+}
+
 nav.close ~ .dashboard .top{
     left: 73px;
     width: calc(100% - 73px);
@@ -238,18 +242,20 @@ nav.close ~ .dashboard .top{
     color: var(--text-color);
     cursor: pointer;
 }
-.dashboard .top .search-box{
+.dashboard .bottom .search-box{
     position: relative;
     height: 45px;
-    max-width: 600px;
+    max-width: 350px;
     width: 100%;
     margin: 0 30px;
 }
-.top .search-box input{
+.bottom .search-box input{
     position: absolute;
     border: 1px solid var(--border-color);
     background-color: var(--panel-color);
     padding: 0 25px 0 50px;
+    /* border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; */
     border-radius: 5px;
     height: 100%;
     width: 100%;
@@ -258,7 +264,7 @@ nav.close ~ .dashboard .top{
     font-weight: 400;
     outline: none;
 }
-.top .search-box i{
+.bottom .search-box i{
     position: absolute;
     left: 15px;
     font-size: 22px;
@@ -267,12 +273,85 @@ nav.close ~ .dashboard .top{
     transform: translateY(-50%);
     color: var(--black-light-color);
 }
+
+.dashboard .bottom .filter-box {
+    position: relative;
+    top: 0px;
+    left: 400px;
+    height: 45px;
+    max-width: 70px;
+    width: 100%;
+    margin: 0 30px;
+}
+
+.dashboard .bottom .filter-box a {
+    display: inline-block;
+    height: 45px;
+    max-width: 150px;
+    width: 100%;
+    border: 1px solid var(--black-light-color);
+}
+
+.top .navigation {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    border: none;
+}
+
+.top .navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.top .navbar li {
+    margin: 0px 10px 0px 10px;
+    list-style: none;
+}
+
+.top .navbar li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.top .navbar li a.active {
+    position: relative;
+}
+
+.top .navbar li a.active::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    bottom: -10px;
+    width: 110%;
+    height: 4px;
+    background-color: var(--text-color);
+}
+
+.top .navbar li a span {
+    display: inline-block;
+    padding: 0px 10px;
+    border-radius: 5px;
+    background-color:var(--box1-color);
+}
+
+
+.top .supply-btn {
+	display: block;
+	padding: 10px 20px 10px 20px;
+	background-color:var(--btn-add);
+	color: var(--mainColor);
+	border-radius: 5px;
+	margin: 20px;
+}
 .top img{
     width: 40px;
     border-radius: 50%;
 }
 .dashboard .dash-content{
-    padding-top: 50px;
+    padding-top: 150px;
 }
 .dash-content .title{
     display: flex;
@@ -405,7 +484,7 @@ nav.close ~ .dashboard .top{
     }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 767.98px) {
     .dash-content .boxes .box{
         width: calc(100% / 2 - 15px);
         margin-top: 15px;

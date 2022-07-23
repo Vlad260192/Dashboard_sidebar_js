@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -15,67 +18,147 @@
                 <!--<img src="images/logo.png" alt="">-->
             </div>
 
-            <span class="logo_name">CodingLab</span>
+            <span class="logo_name">LOGO</span>
         </div>
 
         <div class="menu-items">
             <ul class="nav-links">
-                <li><a href="#">
-                    <i class="uil uil-estate"></i>
-                    <span class="link-name">Dahsboard</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-files-landscapes"></i>
-                    <span class="link-name">Content</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-chart"></i>
-                    <span class="link-name">Analytics</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-thumbs-up"></i>
-                    <span class="link-name">Like</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-comments"></i>
-                    <span class="link-name">Comment</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-share"></i>
-                    <span class="link-name">Share</span>
-                </a></li>
+                <li>
+					<a href="#">
+						<i class="fas fa-clipboard-list"></i>
+						<span class="link-name">Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fas fa-check-circle"></i>
+						<span class="link-name">Tasks</span>
+					</a>
+				</li>
             </ul>
-            
+
+            <ul class="nav-links">
+                <h3 class="nav-links__title">Marketing</h3>
+				<li>
+					<a href="#">
+						<i class="fas fa-user-circle"></i>
+						<span class="link-name">Contacts</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fas fa-edit"></i>
+						<span class="link-name">Content</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fas fa-image"></i>
+						<span class="link-name">Templates</span>
+					</a>
+				</li>
+            </ul>
+
+            <ul class="nav-links">
+                <h3 class="nav-links__title">Planning</h3>
+				<li>
+					<a href="#">
+						<i class="fas fa-globe-asia"></i>
+						<span class="link-name">Destinations</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fas fa-search"></i>
+						<span class="link-name">Search Supply</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fas fa-building"></i>
+						<span class="link-name">Suppliers</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fas fa-briefcase"></i>
+						<span class="link-name">Trips</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fas fa-users"></i>
+						<span class="link-name">Community</span>
+					</a>
+				</li>
+            </ul>
+            <ul class="nav-links">
+                <h3 class="nav-links__title">Business</h3>
+				<li>
+					<a href="#">
+						<i class="fas fa-dollar-sign"></i>
+						<span class="link-name">Commissions</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fas fa-signal"></i>
+						<span class="link-name">Reports</span>
+					</a>
+				</li>
+            </ul>
+
             <ul class="logout-mode">
-                <li><a href="#">
-                    <i class="uil uil-signout"></i>
-                    <span class="link-name">Logout</span>
-                </a></li>
-
-                <li class="mode">
-                    <a href="#">
-                        <i class="uil uil-moon"></i>
-                    <span class="link-name">Dark Mode</span>
-                </a>
-
-                <div class="mode-toggle">
-                  <span class="switch"></span>
-                </div>
-            </li>
+                <li>
+					<a href="#">
+						<i class="fas fa-graduation-cap"></i>
+						<span class="link-name">Training & Help</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fas fa-cog"></i>
+						<span class="link-name">Settings</span>
+					</a>
+				</li>
             </ul>
         </div>
     </nav>
 
     <section class="dashboard">
         <div class="top">
-            <i class="uil uil-bars sidebar-toggle"></i>
+            <!-- <i class="uil uil-bars sidebar-toggle"></i> -->
+            <i class="fas fa-angle-left sidebar-toggle"></i>
+            <nav class="navigation">
+                <ul class="navbar">
+                    <li>
+                        <a class="active" href="#">Hotels <span>170,802</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Cruises <span>57</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Tours <span>9</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Cars <span>13</span></a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="supply-btn">+ New Supply</button>
+            <!--<img src="images/profile.jpg" alt="">-->
+        </div>
 
+        <div class="bottom">
             <div class="search-box">
-                <i class="uil uil-search"></i>
-                <input type="text" placeholder="Search here...">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search items">
+            </div>
+            <div class="filter-box">
+                <i class="fas fa-filter"></i>
+                <a href="#popup" class="dash-popup header__phone popup-link">Filter</a>
             </div>
             
-            <!--<img src="images/profile.jpg" alt="">-->
         </div>
 
         <div class="dash-content">
@@ -165,6 +248,7 @@
             </div>
         </div>
     </section>
+    <script src="https://kit.fontawesome.com/1ee1129cd8.js" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
